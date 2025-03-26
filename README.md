@@ -6,4 +6,8 @@ step to create project:
    https://api.quran.gading.dev/surah ===> get all surah
 4. lalu kita buat model dart nya, buka url : https://app.quicktype.io/ dan copy surah .jsonnya ke web tersebut
    untuk dibuatkan model surah dari bahasa pemograman dart atau pemograman lainnya
-5. 
+
+
+
+install sqflite: get install sqflite
+install path provider: get install path_provider

@@ -218,7 +218,44 @@ class HomeView extends GetView<HomeController> {
                         );
                       }
                     ),
-                    Center(child: Text("page 3")),
+                    GetBuilder<HomeController>(
+                      builder: (c) {
+                        return FutureBuilder<List<Map<String,dynamic>>>(
+                          future: c.getBookmark(),
+                          builder: (context, snapshot) {
+                            if(snapshot.connectionState == ConnectionState.waiting) {
+                              return Center(
+                                child: CircularProgressIndicator(),
+                              );
+                            }
+
+                            if (snapshot.data == null || snapshot.data!.isEmpty) {
+                              return Center(
+                                child: Text("Bookmark tidak tersedia"),
+                              );
+                            }
+
+                            return ListView.builder(
+                                itemCount: snapshot.data!.length,
+                                itemBuilder: (context, index) {
+                                  Map<String,dynamic> data = snapshot.data![index];
+                                  return ListTile(
+                                    onTap: () {
+                                      print(data);
+                                    },
+                                    leading: CircleAvatar(
+                                        child: Text("Judul ${index+1}")
+                                    ),
+                                    title: Text("${data['surah']}"),
+                                    subtitle: Text("Ayat ${data['ayat']} - via ${data['via']}"),
+                                  );
+                                }
+
+                            );
+                          },
+                        );
+                      }
+                    )
                   ]
                 ),
               )

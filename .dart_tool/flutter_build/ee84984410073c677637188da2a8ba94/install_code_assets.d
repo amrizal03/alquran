@@ -1,0 +1,1 @@
+ /home/nusatrip/AndroidStudioProjects/alquran/.dart_tool/flutter_build/ee84984410073c677637188da2a8ba94/native_assets.json: 

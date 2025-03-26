@@ -29,6 +29,7 @@ INJECTED from /home/nusatrip/AndroidStudioProjects/alquran/android/app/src/debug
 MERGED from [:just_audio] /home/nusatrip/AndroidStudioProjects/alquran/build/just_audio/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:audio_session] /home/nusatrip/AndroidStudioProjects/alquran/build/audio_session/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider_android] /home/nusatrip/AndroidStudioProjects/alquran/build/path_provider_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite_android] /home/nusatrip/AndroidStudioProjects/alquran/build/sqflite_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.7.1] /home/nusatrip/.gradle/caches/8.10.2/transforms/cf3a986fc94dc98dab92da85e4b25558/transformed/fragment-1.7.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.media:media:1.7.0] /home/nusatrip/.gradle/caches/8.10.2/transforms/bfb521cf7dbeee9e7fd9882b71e4fd39/transformed/media-1.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.media3:media3-extractor:1.4.1] /home/nusatrip/.gradle/caches/8.10.2/transforms/2da29a4db85fa016031a8271d099d5c9/transformed/jetified-media3-extractor-1.4.1/AndroidManifest.xml:17:1-22:12
@@ -111,6 +112,8 @@ MERGED from [:audio_session] /home/nusatrip/AndroidStudioProjects/alquran/build/
 MERGED from [:audio_session] /home/nusatrip/AndroidStudioProjects/alquran/build/audio_session/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /home/nusatrip/AndroidStudioProjects/alquran/build/path_provider_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] /home/nusatrip/AndroidStudioProjects/alquran/build/path_provider_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite_android] /home/nusatrip/AndroidStudioProjects/alquran/build/sqflite_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite_android] /home/nusatrip/AndroidStudioProjects/alquran/build/sqflite_android/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /home/nusatrip/.gradle/caches/8.10.2/transforms/cf3a986fc94dc98dab92da85e4b25558/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.7.1] /home/nusatrip/.gradle/caches/8.10.2/transforms/cf3a986fc94dc98dab92da85e4b25558/transformed/fragment-1.7.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.media:media:1.7.0] /home/nusatrip/.gradle/caches/8.10.2/transforms/bfb521cf7dbeee9e7fd9882b71e4fd39/transformed/media-1.7.0/AndroidManifest.xml:5:5-44

@@ -13,7 +13,7 @@ class DetailJuzView extends GetView<DetailJuzController> {
   @override
   Widget build(BuildContext context) {
     for (var element in allSurahInThisJuz) {
-      print(element.name.transliteration.id);
+      // print(element.name.transliteration.id);
     }
 
     return Scaffold(

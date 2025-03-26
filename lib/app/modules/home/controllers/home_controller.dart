@@ -1,8 +1,10 @@
 import 'dart:convert';
 
+import 'package:alquran/app/data/db/bookmark.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:http/http.dart' as http;
+import 'package:sqflite/sqflite.dart';
 
 import '../../../constant/color.dart';
 import '../../../data/models/juz.dart';
@@ -11,6 +13,19 @@ import '../../../data/models/surah.dart';
 class HomeController extends GetxController {
   List<Surah> allSurah = [];
   RxBool isDark = false.obs;
+
+  DatabaseManager database = DatabaseManager.instance;
+
+  Future<List<Map<String, dynamic>>> getBookmark() async {
+    Database? db = await database.db;
+    if (db == null) return []; // Pastikan tidak return null, gunakan list kosong
+
+    List<Map<String, dynamic>> allbookmarks = await db.query(
+      "bookmark",
+      where: "last_read = 0",
+    );
+    return allbookmarks; // Kembalikan list yang sesuai dengan tipe data
+  }
 
   void changeThemeMode() async {
     Get.isDarkMode ? Get.changeTheme(themeLight) : Get.changeTheme(themeDark);
@@ -53,7 +68,7 @@ class HomeController extends GetxController {
       try {
         Juz juz = Juz.fromJson(data);
         allJuz.add(juz);
-        print("Juz Parsed Successfully: ${juz.juz}");
+        // print("Juz Parsed Successfully: ${juz.juz}");
       } catch (e) {
         print("Error parsing JSON: $e");
         print("Juz: $i");

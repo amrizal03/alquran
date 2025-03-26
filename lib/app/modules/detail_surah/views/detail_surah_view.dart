@@ -128,7 +128,30 @@ class DetailSurahView extends GetView<DetailSurahController> {
                                   children: [
                                     IconButton(
                                         onPressed: () {
-                                          // controller.playAudio(ayat!.audio.primary);
+                                          Get.defaultDialog(
+                                            title: "BOOKMARK",
+                                            middleText: "Pilih jenis bookmark",
+                                            actions: [
+                                              ElevatedButton(
+                                                onPressed: () {
+                                                  c.addBookmark(true, snapshot.data!, ayat, index);
+                                                },
+                                                style: ElevatedButton.styleFrom(
+                                                  backgroundColor: appPurple,
+                                                ),
+                                                child: Text("LAST READ", style: TextStyle(color: appWhite),),
+                                              ),
+                                              ElevatedButton(
+                                                onPressed: () {
+                                                  c.addBookmark(false,snapshot.data!, ayat, index);
+                                                },
+                                                style: ElevatedButton.styleFrom(
+                                                  backgroundColor: appPurple,
+                                                ),
+                                                child: Text("BOOKMARK", style: TextStyle(color: appWhite),),
+                                              ),
+                                            ],
+                                          );
                                         },
                                         icon: Icon(Icons.bookmark_add_outlined)),
                                     (ayat?.kondisiAudio == "stop") ? IconButton(
